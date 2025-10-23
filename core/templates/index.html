@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block conteudo %}
+    <!-- ***** Welcome Area Start ***** -->
+    {% include 'includes/welcome.html' %}
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    {% include 'includes/features_small.html' %}
+    <!-- ***** Features Small End ***** -->
+
+    {% include 'includes/features_big.html' %}
+
+    <!-- ***** work process Start ***** -->
+    {% include 'includes/work_process.html' %}
+    <!-- ***** work process End ***** -->
+
+    <!-- ***** Testimonials Start ***** -->
+    {% include 'includes/testimonials.html' %}
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Pricing Plans Start ***** -->
+    {% include 'includes/pricing.html' %}
+    <!-- ***** Pricing Plans End ***** -->
+
+    <!-- ***** Counter Parallax Start ***** -->
+    {% include 'includes/counter.html' %}
+    <!-- ***** Counter Parallax End ***** -->   
+
+    <!-- ***** Contact Us Start ***** -->
+    {% include 'includes/contact.html' %}
+    <!-- ***** Contact Us End ***** -->
+
+{% endblock %}

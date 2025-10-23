@@ -1,0 +1,29 @@
+{% load static %}
+    <section class="mini" id="work-process">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="info">
+                            <h1>Rotina de Trabalho</h1>
+                            <p>Aenean nec tempor metus. Maecenas ligula dolor, commodo in imperdiet interdum, vehicula ut ex. Donec ante diam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***** Mini Box Start ***** -->
+                <div class="row">
+                {% for r in rotinastrabalho %}
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{{ r.imagem.thumb.url }}" alt="imagem rotina"></i>
+                            <strong>{{ r.titulo }}</strong>
+                            <span>{{ r.descricao|truncatewords:10 }}</span>
+                        </a>
+                    </div>
+                {% endfor %}
+                </div>
+                <!-- ***** Mini Box End ***** -->
+            </div>
+        </div>
+    </section>
